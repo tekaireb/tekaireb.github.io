@@ -1,0 +1,111 @@
+[
+    {
+        "title": "Nimblex Dictionary",
+        "company": "",
+        "start_date": "March 1, 2021",
+        "end_date": "",
+        "link": "https://github.com/tekaireb/nimblex_dictionary",
+        "description": [
+            "Blazing fast C++ dictionary for the Terminal:",
+            "• Trie (prefix tree) representation for fast search and autocomplete.",
+            "• Fuzzy search using Levenshtein distance with dynamic programming.",
+            "• Interactive GUI using ncurses library."
+        ],
+        "show": true,
+        "tags": [
+            "C++",
+            "ncurses"
+        ]
+    },
+    {
+        "title": "Nimblex Dictionary",
+        "company": "",
+        "start_date": "March 1, 2021",
+        "end_date": "",
+        "link": "https://github.com/tekaireb/nimblex_dictionary",
+        "description": [
+            "Blazing fast C++ dictionary for the Terminal:",
+            "• Trie (prefix tree) representation for fast search and autocomplete.",
+            "• Fuzzy search using Levenshtein distance with dynamic programming.",
+            "• Interactive GUI using ncurses library."
+        ],
+        "show": true,
+        "tags": [
+            "C++",
+            "ncurses"
+        ]
+    },
+    {
+        "title": "Nimblex Dictionary",
+        "company": "",
+        "start_date": "March 1, 2021",
+        "end_date": "",
+        "link": "https://github.com/tekaireb/nimblex_dictionary",
+        "description": [
+            "Blazing fast C++ dictionary for the Terminal:",
+            "• Trie (prefix tree) representation for fast search and autocomplete.",
+            "• Fuzzy search using Levenshtein distance with dynamic programming.",
+            "• Interactive GUI using ncurses library."
+        ],
+        "show": true,
+        "tags": [
+            "C++",
+            "ncurses"
+        ]
+    },
+    {
+        "title": "Nimblex Dictionary",
+        "company": "",
+        "start_date": "March 1, 2021",
+        "end_date": "",
+        "link": "https://github.com/tekaireb/nimblex_dictionary",
+        "description": [
+            "Blazing fast C++ dictionary for the Terminal:",
+            "• Trie (prefix tree) representation for fast search and autocomplete.",
+            "• Fuzzy search using Levenshtein distance with dynamic programming.",
+            "• Interactive GUI using ncurses library."
+        ],
+        "show": true,
+        "tags": [
+            "C++",
+            "ncurses"
+        ]
+    },
+    {
+        "title": "Nimblex Dictionary",
+        "company": "",
+        "start_date": "March 1, 2021",
+        "end_date": "",
+        "link": "https://github.com/tekaireb/nimblex_dictionary",
+        "description": [
+            "Blazing fast C++ dictionary for the Terminal:",
+            "• Trie (prefix tree) representation for fast search and autocomplete.",
+            "• Fuzzy search using Levenshtein distance with dynamic programming.",
+            "• Interactive GUI using ncurses library."
+        ],
+        "show": true,
+        "tags": [
+            "C++",
+            "ncurses"
+        ]
+    },
+    {
+        "title": "Paxos Decentralized Database",
+        "company": "",
+        "start_date": "Feb 1, 2021",
+        "end_date": "March 1, 2021",
+        "link": "https://github.com/tekaireb/paxos-database",
+        "description": [
+            "• Created distributed key-value database in Python with full replication across nodes.",
+            "• Used Multi-Paxos algorithm to reach consensus, backed by private blockchain and disk backup to prevent tampering and ensure fault-tolerance.",
+            "• Made separate server and client nodes so users can interact with the database without hosting data."
+        ],
+        "show": true,
+        "tags": [
+            "Python",
+            "Paxos",
+            "Distributed Systems",
+            "Fault Tolerance"
+        ]
+    }
+]

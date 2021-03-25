@@ -1,0 +1,40 @@
+.App {
+  text-align: center;
+}
+
+.dark_background, body {
+  background-color: #0f1e3c;
+}
+
+.background {
+  background-color: #14283c;
+}
+
+.accent_background {
+  background-color: #00d9f0;
+}
+
+.accent_color, a {
+  color: #00d9f0;
+}
+
+.light_color {
+  color: #B4F5F0;
+}
+
+body {
+  color: white;
+}
+
+a {
+
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
