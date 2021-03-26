@@ -1,0 +1,36 @@
+.typewriter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.typewriter p {
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  overflow: hidden;
+}
+
+.typewriter p span.typed_text {
+  font-weight: normal;
+  color: #00d9f0;
+}
+.typewriter p span.cursor {
+  display: inline-block;
+  background-color: #ccc;
+  margin-left: 2px;
+  width: 3px;
+  animation: blink 1s infinite;
+}
+
+.typewriter p span.cursor.typing {
+  animation: none;
+}
+
+@keyframes blink {
+  0%  { background-color: #ccc; }
+  49% { background-color: #ccc; }
+  50% { background-color: transparent; }
+  99% { background-color: transparent; }
+  100%  { background-color: #ccc; }
+}
