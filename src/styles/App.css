@@ -1,3 +1,11 @@
+body {
+  color: white;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 .App {
   text-align: center;
 }
@@ -22,10 +30,30 @@
   color: #B4F5F0;
 }
 
-body {
-  color: white;
-}
-
 a {
 
+}
+
+
+/* Scrollbar */
+
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #00d9f0 #0f1e3c;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #0f1e3c;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #00d9f0;
+  border-radius: 20px;
+  border: 3px solid #0f1e3c;
 }

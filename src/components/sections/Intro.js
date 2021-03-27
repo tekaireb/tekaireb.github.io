@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import '../../styles/Intro.css'
 
 export default function Intro(props) {
-    const [typed_text, set_typed_text] = useState('');  // Text typed within typewriter
-    const [typing, set_typing] = useState(false);       // Typing flag
+    const [typed_text, set_typed_text] = useState('Tyler Ekaireb'); // Text typed within typewriter
+    const [typing, set_typing] = useState(false);                   // Typing flag
 
     // Phrases to be typed
     const text = ['Tyler Ekaireb', 'an engineer', 'a programmer', 'a tinkerer', 'a learner', 'a smoothie-maker'];
@@ -14,7 +14,7 @@ export default function Intro(props) {
     const new_delay = 5000;     // Delay between phrases
     // Index variables
     let text_index = 0;         // Index of phrase
-    let char_index = 0;         // Index of char within phrase
+    let char_index = 12;        // Index of char within phrase
 
     // Type each character within phrase, then call erase
     function type() {
@@ -48,14 +48,18 @@ export default function Intro(props) {
         }
     }
 
-    // Call type when the page first loads
+    // Call erase when the page first loads
     useEffect(() => {
-        if (text.length) setTimeout(type, 3000);
+        if (text.length) setTimeout(erase, 4000);
     }, []);
 
     return (
-        <div class="typewriter">
-            <p>I am <span class='typed_text'>{typed_text}</span><span class={'cursor ' + (typing ? 'typing' : '')}>&nbsp;</span></p>
+        <div className='intro'>
+            <p className='greeting'>Hello</p>
+            <div class="typewriter">
+                <p>I'm <span class='typed_text'>{typed_text}</span><span class={'cursor ' + (typing ? 'typing' : '')}>&nbsp;</span></p>
+            </div>
+            <div className='down_button' onClick={() => document.querySelectorAll('.projects')[0].scrollIntoView()}>↓</div>
         </div>
     );
 }

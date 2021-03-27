@@ -1,7 +1,8 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import '../styles/Project.css';
 
 export default function Project(props) {
+
     return (
         <div className='project'>
             <div>
