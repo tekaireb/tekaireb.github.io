@@ -1,5 +1,18 @@
 .jobs {
     padding: 20px;
+    margin: 50px 0;
+    scrollbar-color: #00d9f0 #14283c; /* Works on Firefox */
+}
+
+/* Works on Chrome, Edge, and Safari */
+.jobs::-webkit-scrollbar-track {
+  background: #14283c;
+}
+
+.jobs::-webkit-scrollbar-thumb {
+  background-color: #00d9f0;
+  border-radius: 20px;
+  border: 3px solid #14283c;
 }
 
 .jobs_container {
@@ -11,12 +24,63 @@
 
 .timeline_event {
     position: relative;
+    padding-bottom: 20px;
+    min-height: 400px;
     width: 80vw;
-    height: 600px;
     background: #14283c;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
+
+.event_header {
+    font-size: 25px;
+    color: #b4f5f0;
+    padding-top: 30px;
+    margin: auto;
+    margin-bottom: 0;
+    max-width: 90vw;
+}
+
+@media all and (min-width: 700px) {
+    .event_header { max-width: 55vw; }
+}
+
+.event_timeframe {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    color: lightgrey;
+    margin-top: 10px;
+}
+
+.event_description {
+    text-align: left;
+    margin: 20px 100px;
+    color: lightgrey;
+    font-size: 14px;
+}
+
+.event_left, .event_right {
+    position: absolute;
+    top: 50%;
+    font-size: 40px;
+    height: 50px;
+    width: 50px;
+    border: 1px solid white;
+    border-radius: 50%;
+    transition-duration: 1s;
+}
+
+.event_left:hover, .event_right:hover {
+    cursor: pointer;
+    color: #00d9f0;
+    border: 1px solid #00d9f0;
+
+}
+
+.event_left { left: 30px; }
+.event_right { right: 30px; }
+.event_left:hover { left: 20px; }
+.event_right:hover { right: 20px; }
 
 .axis {
     position: relative;
@@ -24,25 +88,20 @@
     height: 100px;
     background: #14283c;
     overflow-x: scroll;
-    scrollbar-color: #00d9f0 #14283c; /* Works on Firefox */
     border-top: 1px solid rgb(180, 245, 240, 0.1);
 }
 
-/* Works on Chrome, Edge, and Safari */
-.axis::-webkit-scrollbar-track {
-  background: #14283c;
+@media all and (max-width: 700px) {
+    .timeline_event { width: 100vw; }
+    .axis { width: 100vw; }
 }
 
-.axis::-webkit-scrollbar-thumb {
-  background-color: #00d9f0;
-  border-radius: 20px;
-  border: 3px solid #14283c;
-}
+
 
 .line {
     position: absolute;
     height: 100%;
-    bottom: 30px;
+    bottom: 50px;
     width: 2px;
     background: rgb(180, 245, 240, 0.1);
     left: 10px;
@@ -50,15 +109,22 @@
 
 .year {
     position: absolute;
-    bottom: 2px;
+    bottom: 10px;
     color: #b4f5f0;
     font-size: 14px;
 }
 
 .job_bar {
     position: absolute;
-    height: 20px;
-    background: red;
+    height: 8px;
+    background: #00d9f0;
     border-radius: 5px;
+}
+
+.job_bar:hover {
+    background-color: #14283c !important;
+    border: 1px solid #00d9f0;
+    border-style: dashed;
+    cursor: pointer;
 }
 

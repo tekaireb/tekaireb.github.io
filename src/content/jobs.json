@@ -2,15 +2,69 @@
     {
         "title": "IoT & Cloud Researcher",
         "company": "RACELab",
+        "link": "https://sites.cs.ucsb.edu/~ckrintz/racelab.html",
         "location": "Santa Barbara, CA",
         "start_date": "July 1, 2020",
-        "end_date": ""
+        "end_date": "",
+        "description": [
+            "• Developed data visualization and analysis platform for predictive, hyperlocal weather reports to improve crop yield with C++, Python, PostgreSQL, and React."
+        ]
     },
     {
         "title": "Processor Design Researcher",
         "company": "CS Early Research Scholars Program",
+        "link": "https://ersp.cs.ucsb.edu/",
         "location": "Santa Barbara, CA",
         "start_date": "September 1, 2019",
-        "end_date": "June 1, 2020"
+        "end_date": "June 1, 2020",
+        "description": [
+            "• Designed and simulated 2 RISC-V processors in PyRTL (similar to Verilog) featured in a department-wide presentation.",
+            "• Contrived 4 countermeasures against hardware-level cyberattacks and performed a security/performance audit."
+        ]
+    },
+    {
+        "title": "Software Engineering Intern",
+        "company": "California Association of Realtors",
+        "link": "https://www.car.org/",
+        "location": "Los Angeles, CA",
+        "start_date": "June 1, 2017",
+        "end_date": "August 1, 2019",
+        "description": [
+            "Spent three summers working on various projects, many of which are in currently in production. I learned about developing software for real-world use cases and designing code that can be easily extended by other developers.",
+            "",
+            "• Created financial and legal advice chat bots and framework; $80,000 in funding allocated for content creation.",
+            "• Produced a step-by-step wizard to guide users through complex real estate forms online, integrated with ZipLogix through RESTful web services, allowing users to fill forms 3x faster.",
+            "• Devised a blockchain-based distributed file system in Python and Solidity (on Ethereum) as a proof of concept for secure storage of property data as a new industry standard.",
+            "• Built a full-stack web application to capture text, voice, and images to generate and populate 10+ real estate forms.",
+            "• Designed IVR/web-based systems with AWS to handle password resets, eliminating former #1 call center task.",
+            "",
+            "Each project was accompanied by a binder of documentation to ensure maintainability in the future."
+        ]
+    },
+    {
+        "title": "IT Systems Intern",
+        "company": "Oxy Respiratory",
+        "location": "Van Nuys, CA",
+        "start_date": "September 1, 2018",
+        "end_date": "May 1, 2019",
+        "description": [
+            "Much of the healthcare industry relies on paper documents and fax machines. I bridged the gap between new and aging systems, reduced manual entry, and freed coworkers so they could do what they do best.",
+            "",
+            "• Programmed Python scripts to automate tasks and B2B transactions, eliminating 30% of employee workloads.",
+            "• Streamlined paperless operations and consolidated workflows, improving productivity by 200%+.",
+            "• Achieved HIPAA compliance in data storage with encryption and tiered access protocols, passing 2 external audits."
+        ]
+    },
+    {
+        "title": "Head of Design & Programming",
+        "company": "First Robotics Team",
+        "location": "Los Angeles, CA",
+        "start_date": "September 1, 2015",
+        "end_date": "June 1, 2018",
+        "description": [
+            "• Managed team of 10+ students to design, program, and test robots in annual FIRST Robotics Competition.",
+            "• Coordinated implementation of control theory and autonomous driving routines in Java.",
+            "• Won #1 Highest Rookie Seed Award for performance in qualifying rounds. "
+        ]
     }
 ]

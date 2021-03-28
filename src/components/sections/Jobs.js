@@ -5,8 +5,8 @@ import Timeline from '../Timeline';
 
 export default function Jobs(props) {
     return (
-        <div class='jobs'>
-            <h1>Jobs</h1>
+        <div className='jobs'>
+            <h1>Work History</h1>
             <div className='jobs_container'>
                 <div className='jobs_timeline'>
                     <div className='events'></div>

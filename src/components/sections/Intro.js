@@ -9,7 +9,7 @@ export default function Intro(props) {
     const text = ['Tyler Ekaireb', 'an engineer', 'a programmer', 'a tinkerer', 'a learner', 'a smoothie-maker'];
 
     // Delays in milliseconds
-    const type_delay = 200;     // Delay between typing characters
+    const type_delay = 120;     // Delay between typing characters
     const erase_delay = 100;    // Delay between erasing characters   
     const new_delay = 5000;     // Delay between phrases
     // Index variables
@@ -56,10 +56,10 @@ export default function Intro(props) {
     return (
         <div className='intro'>
             <p className='greeting'>Hello</p>
-            <div class="typewriter">
-                <p>I'm <span class='typed_text'>{typed_text}</span><span class={'cursor ' + (typing ? 'typing' : '')}>&nbsp;</span></p>
+            <div className="typewriter">
+                <p>I'm <span className='typed_text'>{typed_text}</span><span className={'cursor ' + (typing ? 'typing' : '')}>&nbsp;</span></p>
             </div>
-            <div className='down_button' onClick={() => document.querySelectorAll('.projects')[0].scrollIntoView()}>↓</div>
+            <div className='down_button' onClick={() => document.querySelectorAll('.jobs')[0].scrollIntoView()}>↓</div>
         </div>
     );
 }
