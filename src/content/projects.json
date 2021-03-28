@@ -18,81 +18,9 @@
         ]
     },
     {
-        "title": "Nimblex Dictionary",
-        "company": "",
-        "start_date": "March 1, 2021",
-        "end_date": "",
-        "link": "https://github.com/tekaireb/nimblex_dictionary",
-        "description": [
-            "Blazing fast C++ dictionary for the Terminal:",
-            "• Trie (prefix tree) representation for fast search and autocomplete.",
-            "• Fuzzy search using Levenshtein distance with dynamic programming.",
-            "• Interactive GUI using ncurses library."
-        ],
-        "show": true,
-        "tags": [
-            "C++",
-            "ncurses"
-        ]
-    },
-    {
-        "title": "Nimblex Dictionary",
-        "company": "",
-        "start_date": "March 1, 2021",
-        "end_date": "",
-        "link": "https://github.com/tekaireb/nimblex_dictionary",
-        "description": [
-            "Blazing fast C++ dictionary for the Terminal:",
-            "• Trie (prefix tree) representation for fast search and autocomplete.",
-            "• Fuzzy search using Levenshtein distance with dynamic programming.",
-            "• Interactive GUI using ncurses library."
-        ],
-        "show": true,
-        "tags": [
-            "C++",
-            "ncurses"
-        ]
-    },
-    {
-        "title": "Nimblex Dictionary",
-        "company": "",
-        "start_date": "March 1, 2021",
-        "end_date": "",
-        "link": "https://github.com/tekaireb/nimblex_dictionary",
-        "description": [
-            "Blazing fast C++ dictionary for the Terminal:",
-            "• Trie (prefix tree) representation for fast search and autocomplete.",
-            "• Fuzzy search using Levenshtein distance with dynamic programming.",
-            "• Interactive GUI using ncurses library."
-        ],
-        "show": true,
-        "tags": [
-            "C++",
-            "ncurses"
-        ]
-    },
-    {
-        "title": "Nimblex Dictionary",
-        "company": "",
-        "start_date": "March 1, 2021",
-        "end_date": "",
-        "link": "https://github.com/tekaireb/nimblex_dictionary",
-        "description": [
-            "Blazing fast C++ dictionary for the Terminal:",
-            "• Trie (prefix tree) representation for fast search and autocomplete.",
-            "• Fuzzy search using Levenshtein distance with dynamic programming.",
-            "• Interactive GUI using ncurses library."
-        ],
-        "show": true,
-        "tags": [
-            "C++",
-            "ncurses"
-        ]
-    },
-    {
         "title": "Paxos Decentralized Database",
         "company": "",
-        "start_date": "Feb 1, 2021",
+        "start_date": "February 1, 2021",
         "end_date": "March 1, 2021",
         "link": "https://github.com/tekaireb/paxos-database",
         "description": [
@@ -106,6 +34,90 @@
             "Paxos",
             "Distributed Systems",
             "Fault Tolerance"
+        ]
+    },
+    {
+        "title": "Embedded Bluetooth Time Clock",
+        "company": "",
+        "start_date": "February 1, 2021",
+        "end_date": "February 1, 2021",
+        "link": "https://github.com/tekaireb/stm32_time_clock",
+        "description": [
+            "• Created STM32-based time clock for employees to:",
+            "--- Clock in/out via Bluetooth",
+            "--- View employee information and status",
+            "--- Calculate payroll",
+            "• Developed custom page framework for user interface.",
+            "• Utilized the following peripheral devices:",
+            "--- Bluetooth module (over UART)",
+            "--- LCD display (over SPI)",
+            "--- Joystick buttons"
+        ],
+        "show": true,
+        "tags": [
+            "C",
+            "C++",
+            "STM32",
+            "Embedded Systems"
+        ]
+    },
+    {
+        "title": "Pulse",
+        "company": "SBHacks VII Hackathon",
+        "start_date": "January 1, 2021",
+        "end_date": "January 1, 2021",
+        "link": "https://github.com/gmundewadi/sbhacks2021_pulse",
+        "description": [
+            "• Collaborated on a React + MongoDB live engagement tool in 36 hours, currently utilized by 3 campus organizations and professors.",
+            "• Integrated with Heroku for automatic deployment."
+        ],
+        "show": true,
+        "tags": [
+            "React",
+            "MongoDB"
+        ]
+    },
+    {
+        "title": "Secure IoT Processor",
+        "company": "Early Research Scholars Program",
+        "start_date": "September 1, 2019",
+        "end_date": "June 1, 2020",
+        "link": "https://github.com/gmundewadi/sbhacks2021_pulse",
+        "description": [
+            "• Designed and simulated a RISC-V processor using PyRTL (similar to Verilog).",
+            "• Devised countermeasures against hardware-level cyberattacks, involving:",
+            "--- AN-encoding",
+            "--- Internal encryption schemes (RSA / stream ciphers)",
+            "--- Triple modular redundancy",
+            "--- Error correction codes",
+            "• Maintained automated unit tests with PyTest and CircleCI.",
+            "• Performed a security and performance audit."
+        ],
+        "show": true,
+        "tags": [
+            "Python",
+            "PyRTL",
+            "Computer Architecture"
+        ]
+    },
+    {
+        "title": "Course Scheduler",
+        "company": "SBHacks VI Hackathon",
+        "start_date": "January 1, 2020",
+        "end_date": "January 1, 2020",
+        "link": "",
+        "description": [
+            "Project description",
+            "Led team to create a React-based course scheduler in 36 hours to help students plan for course registration:",
+            "• Integrated with UCSB Academics API to provide up-to-date course information.",
+            "• Provided quick searching and rearranging, with a calendar view to facilitate conflict resolution.",
+            "• Suggested courses based on 20+ university requirements.",
+            "• Scraped Rate My Professors to display professor ratings. "
+        ],
+        "show": true,
+        "tags": [
+            "React",
+            "Web scraping"
         ]
     }
 ]

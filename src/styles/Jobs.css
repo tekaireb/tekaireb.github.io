@@ -20,6 +20,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
+    padding-top: 30px;
 }
 
 .timeline_event {
@@ -61,13 +62,14 @@
 
 .event_left, .event_right {
     position: absolute;
-    top: 50%;
+    bottom: 50%;
     font-size: 40px;
     height: 50px;
     width: 50px;
     border: 1px solid white;
     border-radius: 50%;
     transition-duration: 1s;
+    user-select: none;
 }
 
 .event_left:hover, .event_right:hover {
@@ -92,8 +94,23 @@
 }
 
 @media all and (max-width: 700px) {
-    .timeline_event { width: 100vw; }
+    .timeline_event { 
+        width: 100vw;
+        padding-bottom: 50px;
+    }
     .axis { width: 100vw; }
+
+    /* Put buttons at the bottom and make room for text */
+    .event_left, .event_right {
+        bottom: 0;
+        width: 47%;
+        border-radius: 0%;
+    }
+    .event_left { left: 2%; }
+    .event_right { right: 2%; }
+    .event_left:hover { left: 2%; }
+    .event_right:hover { right: 2%; }
+    .event_description { margin: 20px 20px; }
 }
 
 

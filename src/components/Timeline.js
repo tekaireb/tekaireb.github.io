@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../styles/Jobs.css';
 
 // Determine if two Dates have the same month and year
@@ -75,6 +75,8 @@ export default function Timeline(props) {
         document.getElementById('job_bar_' + active_job).scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' })
     }
 
+    
+
     return (
         <>
             <div className='timeline_event'>
@@ -110,7 +112,6 @@ export default function Timeline(props) {
                 )}
 
                 {/* Jobs */}
-                {console.log(jobs)}
                 {jobs.map((job, i) =>
                     <div
                         className='job_bar' id={'job_bar_' + i}
