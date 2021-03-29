@@ -10,7 +10,7 @@ export default function Project(props) {
                 <p className='project_description'>{props.project.description.map(line => <span>{line}<br /></span>)}</p>
             </div>
             <div className='project_tags'>
-                {props.project.tags.map(tag => <span className='project_tag'>{tag}</span>)}
+                {props.project.tags.map(tag => <code className='project_tag'>{tag}</code>)}
             </div>
         </div>
     );

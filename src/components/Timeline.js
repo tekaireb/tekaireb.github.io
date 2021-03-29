@@ -83,10 +83,10 @@ export default function Timeline(props) {
                 <p className='event_header'>
                     {j.title} @ <a href={j.link}>{j.company}</a>
                 </p>
-                <p className='event_timeframe'>
+                <code className='event_timeframe'>
                     {j.start_date.toLocaleString('default', { month: 'long' })} {j.start_date.getFullYear()} -&nbsp;
                     {sameDate(j.end_date, new Date()) ? 'Present' : j.end_date.toLocaleString('default', { month: 'long' }) + ' ' + j.end_date.getFullYear()}
-                </p>
+                </code>
                 <div className='event_description'>
                     {j.description.map(line => <span>{line}<br /></span>)}
                 </div>

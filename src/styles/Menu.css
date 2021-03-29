@@ -1,0 +1,104 @@
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    padding: 0 50px;
+    background-color: rgb(15, 30, 60, 0.9);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+
+    transition-duration: 0.6s;
+}
+
+.menu * {
+    transition-duration: 0.6s;
+}
+
+.menu_scrolled {
+    height: 70px;
+    box-shadow: rgba(2, 4, 8, 0.8) 0 10px 20px -10px;
+}
+
+.menu_hidden {
+    top: -100px;
+}
+
+@media all and (max-width: 1200px) {
+    .menu { padding: 0 40px; }
+}
+
+@media all and (max-width: 700px) {
+    .menu { padding: 0 30px; }
+}
+
+.logo_container {
+    position: relative;
+}
+
+.logo_container:hover {
+    cursor: pointer;
+}
+
+.logo_container:after {
+    display: none;
+}
+
+.menu_logo_text {
+    position: absolute;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    text-align: left;
+    font-size: 18px;
+    color: #00d9f0;
+    opacity: 0;
+    margin-left: -60px;
+    padding-left: 20px;
+}
+
+.logo_container:hover .menu_logo_text {
+    margin-left: 0px;
+    opacity: 1;
+}
+
+.logo_container:hover .menu_logo {
+    margin-left: -20px;
+}
+
+.menu_logo {
+    height: 40px;
+}
+
+.menu_option {
+    margin-left: 30px;
+    font-size: 14px;
+    color: #b4f5f0;
+    text-decoration: none;
+}
+
+.menu_option:hover {
+    color: #00d9f0;
+}
+
+.menu_button {
+    display: none;
+    height: 40px;
+    font-size: 50px;
+    line-height: 25px;
+    color: #00d9f0;
+}
+
+.menu_button:hover {
+    cursor: pointer;
+}
+
+/* Replace menu options with hamburger on small displays */
+@media all and (max-width: 700px) {
+    .menu_button { display: block; }
+    .options_container { display: none }
+}

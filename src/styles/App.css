@@ -1,5 +1,6 @@
 body {
   color: white;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 html {
@@ -22,7 +23,7 @@ html {
   background-color: #00d9f0;
 }
 
-.accent_color, a {
+.accent_color {
   color: #00d9f0;
 }
 
@@ -30,10 +31,40 @@ html {
   color: #B4F5F0;
 }
 
-a {
+/* Links */
 
+a {
+  color: #00d9f0;
+  position: relative;
+  text-decoration: none;
+  transition: color .4s ease-out;
 }
 
+a:hover {
+  color: #00d9f0;
+  right: 0;
+  text-decoration: none;
+}
+
+a:hover:after {
+  border-color: #00d9f0;
+  right: 0;
+}
+
+a:after {
+  border-radius: 1em;
+  border-top: .1em solid #14283c;
+  content: "";
+  position: absolute;
+  right: 100%;
+  bottom: 0.05em;
+  left: 0;
+  transition: right .4s cubic-bezier(0,.5,0,1), border-color .4s ease-out;
+}
+
+a:hover:after {
+  right: 0;
+}
 
 /* Scrollbar */
 
