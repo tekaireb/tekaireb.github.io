@@ -95,3 +95,13 @@ a:hover:after {
   background-color: #00d9f0;
   color: #0f1e3c;
 }
+
+/* Blur */
+
+.content {
+  transition-duration: 0.5s;
+}
+
+.blur { 
+  filter: blur(5px) brightness(0.75);
+}

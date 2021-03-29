@@ -51,27 +51,29 @@ export default function Menu(props) {
         return () => window.removeEventListener("scroll", on_scroll);
     }, [scroll_dir]);
 
-
     return (
         <div className={
             'menu ' +
-            (scroll ? 'menu_scrolled ' : '') +
+            (scroll && !props.menu_open ? 'menu_scrolled ' : '') +
             (scroll_dir === 'down' ? 'menu_hidden' : '')}
         >
             <a className='logo_container' href='/'>
                 <img src={logo} class='menu_logo' alt='Tyler Ekaireb Monogram Logo' />
                 <span className='menu_logo_text'>Tyler Ekaireb</span>
             </a>
-            <div className='options_container'>
+            <div className={'options_container ' + (window.innerWidth <= 700 && props.menu_open ? 'sidebar_open' : '')}>
                 {menu_options.map(o =>
-                    <code>
+                    <code className='menu_option'>
                         <a className='menu_option' href={o.link}>
                             {o.label}
                         </a>
                     </code>
                 )}
             </div>
-            <div className='menu_button'>☰</div>
+            <div 
+                className={'menu_button ' + (props.menu_open ? 'menu_button_open' : '')}
+                onClick={() => props.set_menu_open(!props.menu_open)}
+            >{props.menu_open ? '×' : '☰'}</div>
         </div>
     );
 }

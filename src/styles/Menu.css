@@ -38,6 +38,7 @@
 
 .logo_container {
     position: relative;
+    z-index: 102;
 }
 
 .logo_container:hover {
@@ -91,14 +92,51 @@
     font-size: 50px;
     line-height: 25px;
     color: #00d9f0;
+    z-index: 101;
+    user-select: none;
+    transition-duration: 0.5s;
 }
 
 .menu_button:hover {
     cursor: pointer;
 }
 
+.menu_button_open {
+    rotate: 360deg;
+    font-size: 60px;
+}
+
 /* Replace menu options with hamburger on small displays */
 @media all and (max-width: 700px) {
     .menu_button { display: block; }
-    .options_container { display: none }
+    .options_container {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        bottom: 0;
+        top: 0;
+        width: 60%;
+        right: -60%;
+        background-color: #122448;
+        transition-duration: 0.5s;
+    }
+    .menu_option { 
+        margin-left: 0;
+        margin-bottom: 40px;
+        font-size: 25px;
+    }
 }
+
+@media all and (max-width: 500px) {
+    .options_container {
+         width: 80%;
+        right: -80%;
+    }
+}
+
+.sidebar_open {
+    right: 0;
+}
+
+.blur_show { opacity: 1; }
