@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import '../styles/Menu.css';
 
 import logo from '../img/logo.svg';
+import menu from '../img/menu.svg';
+import exit from '../img/exit.svg';
 
 var menu_options = [
     { label: "About", link: "/#about" },
@@ -63,7 +65,7 @@ export default function Menu(props) {
             </a>
             <div className={'options_container ' + (window.innerWidth <= 700 && props.menu_open ? 'sidebar_open' : '')}>
                 {menu_options.map(o =>
-                    <code className='menu_option'>
+                    <code className='menu_option' onClick={() => props.set_menu_open(false)}>
                         <a className='menu_option' href={o.link}>
                             {o.label}
                         </a>
@@ -71,9 +73,12 @@ export default function Menu(props) {
                 )}
             </div>
             <div 
-                className={'menu_button ' + (props.menu_open ? 'menu_button_open' : '')}
                 onClick={() => props.set_menu_open(!props.menu_open)}
-            >{props.menu_open ? '×' : '☰'}</div>
+                className={'menu_button ' + (props.menu_open ? 'menu_button_open' : '')}
+            >
+                {!props.menu_open && <img src={menu} className='menu_icon' alt='open menu icon' />}
+                {props.menu_open && <img src={exit} className='menu_icon' alt='close menu icon' />}
+            </div>
         </div>
     );
 }

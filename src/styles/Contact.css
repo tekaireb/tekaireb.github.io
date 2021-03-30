@@ -1,0 +1,24 @@
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 30px;
+}
+
+.contact_text {
+    max-width: 600px;
+    padding: 30px;
+    padding-top: 0;
+    color: lightgrey;
+}
+
+.contact_links {
+    margin-bottom: 60px;
+}
+
+.contact_links a {
+    font-size: 18px;
+    margin: 30px;
+}

@@ -12,6 +12,10 @@
     flex-direction: column;
 }
 
+.project a:after {
+    display: none;
+}
+
 @media all and (max-width: 1200px) {
     .project { width: 35%; }
 }

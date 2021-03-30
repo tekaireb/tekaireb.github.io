@@ -67,9 +67,9 @@
   font-size: 40px;
   border-radius: 50%;
   border: 1px solid white;
-  padding: 10px;
-  height: 50px;
-  width: 50px;
+  padding: 20px;
+  height: 40px;
+  width: 40px;
 
   opacity: 0;
   animation: slide_up 1s forwards;
@@ -83,6 +83,17 @@
   color: #00d9f0;
   bottom: 60px;
   border: 1px solid #00d9f0;
+}
+
+.down_arrow {
+  /* White */
+  filter: invert(100%) sepia(99%) saturate(2%) hue-rotate(52deg) brightness(106%) contrast(100%);
+  transition-duration: 1s;
+}
+
+.down_button:hover .down_arrow {
+  /* #00d9f0 */
+  filter: invert(67%) sepia(79%) saturate(1143%) hue-rotate(134deg) brightness(92%) contrast(105%);
 }
 
 @keyframes blink {

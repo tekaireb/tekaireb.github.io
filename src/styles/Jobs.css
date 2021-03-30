@@ -78,6 +78,22 @@
 
 }
 
+.left_arrow, .right_arrow {
+  /* White */
+  filter: invert(100%) sepia(99%) saturate(2%) hue-rotate(52deg) brightness(106%) contrast(100%);
+  
+  height: 30px;
+  transition-duration: 1s;
+}
+
+.left_arrow { rotate: 90deg; }
+.right_arrow { rotate: -90deg; }
+
+.event_left:hover .left_arrow, .event_right:hover .right_arrow {
+  /* #00d9f0 */
+  filter: invert(67%) sepia(79%) saturate(1143%) hue-rotate(134deg) brightness(92%) contrast(105%);
+}
+
 .event_left { left: 30px; }
 .event_right { right: 30px; }
 .event_left:hover { left: 20px; }

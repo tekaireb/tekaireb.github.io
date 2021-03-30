@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import '../styles/Jobs.css';
 
+import arrow_down from '../img/arrow_down.svg';
+
 // Determine if two Dates have the same month and year
 function sameDate(d1, d2) {
     return d1.getMonth === d2.getMonth && d1.getFullYear() === d2.getFullYear();
@@ -91,8 +93,12 @@ export default function Timeline(props) {
                     {j.description.map(line => <span>{line}<br /></span>)}
                 </div>
 
-                {active_job !== jobs.length - 1 && <div className='event_left' onClick={() => next_event(0)}>←</div>}
-                {active_job !== 0 && <div className='event_right' onClick={() => next_event(1)}>→</div>}
+                {active_job !== jobs.length - 1 && <div className='event_left' onClick={() => next_event(0)}>
+                    <img src={arrow_down} alt='arrow left' className='left_arrow' />
+                </div>}
+                {active_job !== 0 && <div className='event_right' onClick={() => next_event(1)}>
+                    <img src={arrow_down} alt='arrow right' className='right_arrow' />
+                </div>}
             </div>
             <div className='axis'>
                 {/* Axis */}

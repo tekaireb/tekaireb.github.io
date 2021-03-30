@@ -82,7 +82,7 @@
         "company": "Early Research Scholars Program",
         "start_date": "September 1, 2019",
         "end_date": "June 1, 2020",
-        "link": "https://github.com/gmundewadi/sbhacks2021_pulse",
+        "link": "",
         "description": [
             "• Designed and simulated a RISC-V processor using PyRTL (similar to Verilog).",
             "• Devised countermeasures against hardware-level cyberattacks, involving:",

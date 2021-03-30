@@ -88,10 +88,10 @@
 
 .menu_button {
     display: none;
-    height: 40px;
+    /*height: 40px;
     font-size: 50px;
     line-height: 25px;
-    color: #00d9f0;
+    color: #00d9f0; */
     z-index: 101;
     user-select: none;
     transition-duration: 0.5s;
@@ -104,6 +104,13 @@
 .menu_button_open {
     rotate: 360deg;
     font-size: 60px;
+}
+
+.menu_icon {
+    /* #00d9f0 */
+    filter: invert(67%) sepia(79%) saturate(1143%) hue-rotate(134deg) brightness(92%) contrast(105%);
+
+    height: 40px;
 }
 
 /* Replace menu options with hamburger on small displays */

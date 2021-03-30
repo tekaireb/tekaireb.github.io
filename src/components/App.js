@@ -8,6 +8,7 @@ import Menu from './Menu';
 import Intro from './sections/Intro';
 import Jobs from './sections/Jobs';
 import Projects from './sections/Projects';
+import Contact from './sections/Contact';
 import Footer from './sections/Footer';
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
         <Intro />
         <Jobs jobs={JobsData} />
         <Projects projects={ProjectsData} />
+        <Contact />
         <Footer />
       </div>
     </div>

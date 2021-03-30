@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import '../../styles/Intro.css'
+import '../../styles/Intro.css';
+
+import arrow_down from '../../img/arrow_down.svg';
 
 export default function Intro(props) {
     const [typed_text, set_typed_text] = useState('Tyler Ekaireb'); // Text typed within typewriter
@@ -59,7 +61,10 @@ export default function Intro(props) {
             <div className="typewriter">
                 <p>I'm <span className='typed_text'>{typed_text}</span><span className={'cursor ' + (typing ? 'typing' : '')}>&nbsp;</span></p>
             </div>
-            <div className='down_button' onClick={() => document.querySelectorAll('.jobs')[0].scrollIntoView()}>↓</div>
+            <div className='down_button' onClick={() => document.querySelectorAll('.jobs')[0].scrollIntoView()}>
+                <img src={arrow_down} alt='arrow down' className='down_arrow' />
+            </div>
+            {/* ↓ */}
         </div>
     );
 }
