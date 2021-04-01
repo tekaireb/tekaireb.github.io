@@ -1,9 +1,16 @@
 .projects_page {
-    padding: 50px 100px;
+    padding: 150px 100px;
     min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+
+    transition-duration: 0.5s;
+}
+
+@media all and (max-width: 1200px) {
+    .projects_page { padding: 100px 30px; }
+}
+
+@media all and (max-width: 700px) {
+    .projects_page { padding: 50px 20px; }
 }
 
 .projects_page * {
@@ -40,27 +47,29 @@
     cursor: pointer;
 }
 
-.project_item_header > * {
-    flex: 1;
+.project_item_year, .project_item_links {
+    width: 100px;
 }
 
 .project_item_title {
     flex: 5;
 }
 
-.project_item_title::before {
+.project_item_header::before {
     content: '+';
     font-size: 20px;
     opacity: 0;
-    transition-duration: 0.5s;
+    transition-duration: 0.3s;
 }
 
-.project_item_title.open::before {
+.project_item_header.open::before {
     rotate: 360deg;
     content: '-';
+    margin: 0 10px;
+    opacity: 1;
 }
 
-.project_item:hover .project_item_title::before {
+.project_item_header:hover::before {
     margin: 0 10px;
     opacity: 1;
 }
@@ -76,11 +85,61 @@
     padding: 20px;
 }
 
-.row .cell:before {
+.project_item_image {
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.icon {
+    height: 25px;
+    /* White */
+    filter: invert(100%) sepia(99%) saturate(2%) hue-rotate(52deg) brightness(106%) contrast(100%);
+    transition-duration: 1s;
+}
+
+.icon:hover {
+    /* #00d9f0 */
+    filter: invert(67%) sepia(79%) saturate(1143%) hue-rotate(134deg) brightness(92%) contrast(105%);
+}
+
+@media all and (max-width: 700px) {
+
+    .project_item_header {
+        display: block;
+    }
+
+    .project_item_header::before {
+        display: none;
+    }
+
+    .project_item_header::after {
+        content: '+';
+        font-size: 35px;
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+
+        transition-duration: 0.3s;
+    }
+
+    .project_item_header.open::after {
+        rotate: 360deg;
+        content: '-';
+    }
+
+    .project_item_header > * {
+        margin-bottom: 10px;
+    }
+
+    .project_item_header > *::before {
     content: attr(data-title);
     font-size: 10px;
     font-weight: bold;
     text-transform: uppercase;
     color: #00d9f0;
     display: block;
+    margin: 0;
+    opacity: 1;
+}
 }

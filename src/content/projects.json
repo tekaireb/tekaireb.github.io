@@ -3,13 +3,16 @@
         "title": "Nimblex Dictionary",
         "company": "",
         "start_date": "March 1, 2021",
-        "end_date": "",
-        "link": "https://github.com/tekaireb/nimblex_dictionary",
+        "end_date": "March 1, 2021",
+        "github": "https://github.com/tekaireb/nimblex_dictionary",
         "description": [
             "Blazing fast C++ dictionary for the Terminal:",
             "• Trie (prefix tree) representation for fast search and autocomplete.",
             "• Fuzzy search using Levenshtein distance with dynamic programming.",
             "• Interactive GUI using ncurses library."
+        ],
+        "images": [
+            "https://github.com/tekaireb/nimblex_dictionary/raw/main/screenshots/overview_clip.gif"
         ],
         "show": true,
         "tags": [
@@ -22,7 +25,7 @@
         "company": "",
         "start_date": "February 1, 2021",
         "end_date": "March 1, 2021",
-        "link": "https://github.com/tekaireb/paxos-database",
+        "github": "https://github.com/tekaireb/paxos-database",
         "description": [
             "• Created distributed key-value database in Python with full replication across nodes.",
             "• Used Multi-Paxos algorithm to reach consensus, backed by private blockchain and disk backup to prevent tampering and ensure fault-tolerance.",
@@ -41,7 +44,7 @@
         "company": "",
         "start_date": "February 1, 2021",
         "end_date": "February 1, 2021",
-        "link": "https://github.com/tekaireb/stm32_time_clock",
+        "github": "https://github.com/tekaireb/stm32_time_clock",
         "description": [
             "• Created STM32-based time clock for employees to:",
             "--- Clock in/out via Bluetooth",
@@ -53,7 +56,7 @@
             "--- LCD display (over SPI)",
             "--- Joystick buttons"
         ],
-        "show": true,
+        "show": false,
         "tags": [
             "C",
             "C++",
@@ -66,12 +69,12 @@
         "company": "SBHacks VII Hackathon",
         "start_date": "January 1, 2021",
         "end_date": "January 1, 2021",
-        "link": "https://github.com/gmundewadi/sbhacks2021_pulse",
+        "github": "https://github.com/gmundewadi/sbhacks2021_pulse",
         "description": [
             "• Collaborated on a React + MongoDB live engagement tool in 36 hours, currently utilized by 3 campus organizations and professors.",
             "• Integrated with Heroku for automatic deployment."
         ],
-        "show": true,
+        "show": false,
         "tags": [
             "React",
             "MongoDB"
@@ -82,7 +85,7 @@
         "company": "Early Research Scholars Program",
         "start_date": "September 1, 2019",
         "end_date": "June 1, 2020",
-        "link": "",
+        "link": "https://drive.google.com/file/d/1W8HYrQebSUhryiT37dtX7qNLkkp9A2bE/view?usp=sharing",
         "description": [
             "• Designed and simulated a RISC-V processor using PyRTL (similar to Verilog).",
             "• Devised countermeasures against hardware-level cyberattacks, involving:",
@@ -114,7 +117,7 @@
             "• Suggested courses based on 20+ university requirements.",
             "• Scraped Rate My Professors to display professor ratings. "
         ],
-        "show": true,
+        "show": false,
         "tags": [
             "React",
             "Web scraping"
