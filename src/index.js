@@ -15,7 +15,7 @@ import reportWebVitals from './reportWebVitals';
 // );
 
 const routes = (
-  <Router>
+  <Router basename={process.env.PUBLIC_URL}>
     <>
       <Route exact path="/" component={App} />
       <Route path="/projects" component={ProjectsPage} />
