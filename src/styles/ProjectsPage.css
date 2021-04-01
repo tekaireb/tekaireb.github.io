@@ -1,0 +1,86 @@
+.projects_page {
+    padding: 50px 100px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.projects_page * {
+    transition-duration: 0.5s;
+}
+
+.projects_header {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.projects_subheader {
+    font-size: 16px;
+    color: #00d9f0;
+    margin-bottom: 80px;
+}
+
+.project_item {
+    margin-bottom: 20px;
+    border: 1px solid #00d9f0;
+    border-radius: 15px;
+}
+
+.project_item_header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+
+    padding: 15px;
+}
+
+.project_item_header:hover {
+    cursor: pointer;
+}
+
+.project_item_header > * {
+    flex: 1;
+}
+
+.project_item_title {
+    flex: 5;
+}
+
+.project_item_title::before {
+    content: '+';
+    font-size: 20px;
+    opacity: 0;
+    transition-duration: 0.5s;
+}
+
+.project_item_title.open::before {
+    rotate: 360deg;
+    content: '-';
+}
+
+.project_item:hover .project_item_title::before {
+    margin: 0 10px;
+    opacity: 1;
+}
+
+.project_item_content {
+    max-height: 0;
+    overflow: hidden;
+    transition-duration: 1s;
+}
+
+.project_item_content.open {
+    max-height: 100vh;
+    padding: 20px;
+}
+
+.row .cell:before {
+    content: attr(data-title);
+    font-size: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #00d9f0;
+    display: block;
+}
