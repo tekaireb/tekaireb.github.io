@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { NavLink } from 'react-router-dom';
 import '../styles/Menu.css';
 
 import logo from '../img/logo.svg';
@@ -6,11 +7,17 @@ import menu from '../img/menu.svg';
 import exit from '../img/exit.svg';
 
 var menu_options = [
-    { label: "About", link: "/#about" },
-    { label: "Work", link: "/#jobs" },
-    { label: "Projects", link: "/#projects" },
-    { label: "Contact", link: "/#contact" }
+    { label: "Home", link: "/" },
+    { label: "Projects", link: "#projects" },
+    // { label: "Contact", link: "#contact" }
 ]
+
+function is_active(link) {
+    let url = window.location.href;
+
+    if (link === '/') return url.endsWith('/'); // Handle home page
+    return url.endsWith(link.substring(1)); // Check URL against link (ignore first char, #)
+}
 
 export default function Menu(props) {
     // Detect whether or not window is scrolled
@@ -48,7 +55,7 @@ export default function Menu(props) {
 
         window.addEventListener("scroll", on_scroll);
 
-        console.log(scroll_dir);
+        // console.log(scroll_dir);
 
         return () => window.removeEventListener("scroll", on_scroll);
     }, [scroll_dir]);
@@ -65,14 +72,14 @@ export default function Menu(props) {
             </a>
             <div className={'options_container ' + (window.innerWidth <= 700 && props.menu_open ? 'sidebar_open' : '')}>
                 {menu_options.map(o =>
-                    <code className='menu_option' onClick={() => props.set_menu_open(false)}>
-                        <a className='menu_option' href={o.link}>
+                    <a className={'menu_option ' + (is_active(o.link) ? 'active' : '')} href={o.link}>
+                        <code onClick={() => props.set_menu_open(false)}>
                             {o.label}
-                        </a>
-                    </code>
+                        </code>
+                    </a>
                 )}
             </div>
-            <div 
+            <div
                 onClick={() => props.set_menu_open(!props.menu_open)}
                 className={'menu_button ' + (props.menu_open ? 'menu_button_open' : '')}
             >

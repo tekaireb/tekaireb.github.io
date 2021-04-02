@@ -10,7 +10,7 @@ function ProjectsListItem(props) {
     const [open, set_open] = useState(false);
 
     return (
-        <div className='project_item'>
+        <div className='project_item' id={project.title.replaceAll(' ', '_')}>
             <div className={'project_item_header ' + (open ? 'open' : '')} onClick={() => set_open(!open)}>
                 <div data-title="Title" className='project_item_title'>
                     {project.title}

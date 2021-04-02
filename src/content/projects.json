@@ -110,7 +110,6 @@
         "end_date": "January 1, 2020",
         "link": "",
         "description": [
-            "Project description",
             "Led team to create a React-based course scheduler in 36 hours to help students plan for course registration:",
             "• Integrated with UCSB Academics API to provide up-to-date course information.",
             "• Provided quick searching and rearranging, with a calendar view to facilitate conflict resolution.",

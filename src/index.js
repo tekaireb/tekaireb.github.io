@@ -1,10 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Route, BrowserRouter as Router } from 'react-router-dom';
+import { Route, HashRouter as Router, Switch } from 'react-router-dom';
 
 import './styles/index.css';
 import App from './components/App';
 import ProjectsPage from './components/ProjectsPage';
+
+import ScrollToTop from './components/ScrollToTop';
 import reportWebVitals from './reportWebVitals';
 
 // ReactDOM.render(
@@ -16,10 +18,12 @@ import reportWebVitals from './reportWebVitals';
 
 const routes = (
   <Router basename={process.env.PUBLIC_URL}>
-    <>
-      <Route exact path="/" component={App} />
-      <Route path="/projects" component={ProjectsPage} />
-    </>
+    <Switch>
+      <Route exact path="/" ><ScrollToTop><App /></ ScrollToTop></Route>
+      <Route exact path="/projects">
+        <ScrollToTop><ProjectsPage /></ ScrollToTop>
+      </Route>
+    </Switch>
   </Router>
 )
 

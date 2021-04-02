@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 import '../styles/App.css';
 import ProjectsData from "../content/projects.json";
@@ -10,6 +10,19 @@ import Footer from './sections/Footer';
 export default function ProjectsPage() {
     // Hold open/close state for sidebar menu (mobile only)
     const [menu_open, set_menu_open] = useState(false);
+
+    useEffect(() => {
+        let url = window.location.href;
+
+        let anchor = url.substring(url.lastIndexOf('#') + 1);
+        if (!anchor.startsWith('/')) {
+            let project = document.querySelector('#' + anchor);
+            project.scrollIntoView();
+            for (let n of project.childNodes)
+                n.className += ' open';
+        }
+            
+    }, [])
 
     return (
         <div className="projects_page">

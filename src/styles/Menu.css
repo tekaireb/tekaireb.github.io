@@ -76,7 +76,7 @@
 }
 
 .menu_option {
-    margin-left: 30px;
+    margin-left: 60px;
     font-size: 14px;
     color: #b4f5f0;
     text-decoration: none;
@@ -85,6 +85,13 @@
 .menu_option:hover {
     color: #00d9f0;
 }
+
+.menu_option.active {
+    font-weight: bold;
+}
+
+.menu_option.active > *::before { content: '['; }
+.menu_option.active > *::after { content: ']'; }
 
 .menu_button {
     display: none;
@@ -129,9 +136,11 @@
         transition-duration: 0.5s;
     }
     .menu_option { 
-        margin: 0 auto;
-        margin-bottom: 40px;
+        margin: 20px auto;
         font-size: 25px;
+    }
+    .menu_option {
+        margin: 30px;
     }
 }
 

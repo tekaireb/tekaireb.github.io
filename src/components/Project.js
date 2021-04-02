@@ -5,7 +5,7 @@ export default function Project(props) {
 
     return (
         <div className='project'>
-            <a href={props.project.link}>
+            <a href={'/#/projects#' + props.project.title.replaceAll(' ', '_')}>
                 <div>
                     <h3 className='project_header'>{props.project.title}</h3>
                     <p className='project_description'>{props.project.description.map(line => <span>{line}<br /></span>)}</p>

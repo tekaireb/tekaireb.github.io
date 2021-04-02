@@ -10,15 +10,15 @@
     align-items: stretch;
     flex: 1 1 0px;
     padding: 50px;
-    padding-top: 30px;
+    padding-top: 0px;
 }
 
 @media all and (max-width: 1200px) {
-    .projects_grid { padding: 50px 20px; }
+    .projects_grid { padding: 0 20px; }
 }
 
 @media all and (max-width: 700px) {
-    .projects_grid { padding: 50px 0; }
+    .projects_grid { padding: 0; }
 }
 
 .projects_subheader {
