@@ -124,7 +124,7 @@ export default function Timeline(props) {
                         style={{
                             left: monthDiff(job.start_date, start) * TICK,
                             width: monthDiff(job.end_date, job.start_date) * TICK,
-                            top: countOverlaps(job, jobs.slice(0, i)) * (15) + 5,
+                            top: countOverlaps(job, jobs.slice(0, i)) * (25) + 5,
                             background: i === active_job ? '#00d9f0' : '#b4f5f0'
                         }}
                         onClick={() => next_event(0, i)}

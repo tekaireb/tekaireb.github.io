@@ -43,6 +43,13 @@
     font-size: 14px;
 }
 
+.project_image {
+    width: 100%;
+    margin: 10px 0;
+    border: 1px solid #00d9f0;
+    border-radius: 10px;
+}
+
 .project_tags {
     display: flex;
     flex-flow: row wrap;

@@ -3,15 +3,18 @@ import '../styles/Project.css';
 
 export default function Project(props) {
 
+    let project = props.project;
+
     return (
         <div className='project'>
-            <a href={'/#/projects#' + props.project.title.replaceAll(' ', '_')}>
+            <a href={'/#/projects#' + project.title.replaceAll(' ', '_')}>
                 <div>
-                    <h3 className='project_header'>{props.project.title}</h3>
-                    <p className='project_description'>{props.project.description.map(line => <span>{line}<br /></span>)}</p>
+                    <h3 className='project_header'>{project.title}</h3>
+                    <p className='project_description'>{project.blurb}</p>
+                    {project.images && project.images.map(i => <img src={i} alt={project.title + ' media'} className='project_image' />)}
                 </div>
                 <div className='project_tags'>
-                    {props.project.tags.map(tag => <code className='project_tag'>{tag}</code>)}
+                    {project.tags.map(tag => <code className='project_tag'>{tag}</code>)}
                 </div>
             </a>
         </div>

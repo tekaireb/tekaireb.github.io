@@ -17,7 +17,7 @@ export default function ProjectsPage() {
         let anchor = url.substring(url.lastIndexOf('#') + 1);
         if (!anchor.startsWith('/')) {
             let project = document.querySelector('#' + anchor);
-            project.scrollIntoView();
+            setTimeout(() => project.scrollIntoView(), 0);
             for (let n of project.childNodes)
                 n.className += ' open';
         }

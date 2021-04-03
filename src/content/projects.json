@@ -5,6 +5,7 @@
         "start_date": "March 1, 2021",
         "end_date": "March 1, 2021",
         "github": "https://github.com/tekaireb/nimblex_dictionary",
+        "blurb": "Blazing fast C++ dictionary for the Terminal with autocorrect and autocomplete.",
         "description": [
             "Blazing fast C++ dictionary for the Terminal:",
             "• Trie (prefix tree) representation for fast search and autocomplete.",
@@ -26,10 +27,14 @@
         "start_date": "February 1, 2021",
         "end_date": "March 1, 2021",
         "github": "https://github.com/tekaireb/paxos-database",
+        "blurb": "Fault-tolerant database with Multi-Paxos algorithm backed by a private blockchain.",
         "description": [
             "• Created distributed key-value database in Python with full replication across nodes.",
             "• Used Multi-Paxos algorithm to reach consensus, backed by private blockchain and disk backup to prevent tampering and ensure fault-tolerance.",
             "• Made separate server and client nodes so users can interact with the database without hosting data."
+        ],
+        "images": [
+            "https://raw.githubusercontent.com/tekaireb/paxos_database/main/screenshots/Blockchain%20in%20sync.png"
         ],
         "show": true,
         "tags": [
@@ -45,6 +50,7 @@
         "start_date": "February 1, 2021",
         "end_date": "February 1, 2021",
         "github": "https://github.com/tekaireb/stm32_time_clock",
+        "blurb": "Clock in hands-free at work with a Bluetooth-enabled time clock.",
         "description": [
             "• Created STM32-based time clock for employees to:",
             "--- Clock in/out via Bluetooth",
@@ -70,6 +76,7 @@
         "start_date": "January 1, 2021",
         "end_date": "January 1, 2021",
         "github": "https://github.com/gmundewadi/sbhacks2021_pulse",
+        "blurb": "Live engagement tool for remote classrooms used by professors on campus.",
         "description": [
             "• Collaborated on a React + MongoDB live engagement tool in 36 hours, currently utilized by 3 campus organizations and professors.",
             "• Integrated with Heroku for automatic deployment."
@@ -86,6 +93,7 @@
         "start_date": "September 1, 2019",
         "end_date": "June 1, 2020",
         "link": "https://drive.google.com/file/d/1W8HYrQebSUhryiT37dtX7qNLkkp9A2bE/view?usp=sharing",
+        "blurb": "Configurable, low-power RISC-V processor with cybersecurity features.",
         "description": [
             "• Designed and simulated a RISC-V processor using PyRTL (similar to Verilog).",
             "• Devised countermeasures against hardware-level cyberattacks, involving:",
@@ -95,6 +103,9 @@
             "--- Error correction codes",
             "• Maintained automated unit tests with PyTest and CircleCI.",
             "• Performed a security and performance audit."
+        ],
+        "images": [
+            ""
         ],
         "show": true,
         "tags": [
@@ -109,6 +120,7 @@
         "start_date": "January 1, 2020",
         "end_date": "January 1, 2020",
         "link": "",
+        "blurb": "Plan for course registration with this intelligent course scheduler.",
         "description": [
             "Led team to create a React-based course scheduler in 36 hours to help students plan for course registration:",
             "• Integrated with UCSB Academics API to provide up-to-date course information.",

@@ -148,9 +148,9 @@
 
 .job_bar {
     position: absolute;
-    height: 8px;
+    height: 15px;
     background: #00d9f0;
-    border-radius: 5px;
+    border-radius: 15px;
 }
 
 .job_bar:hover {
