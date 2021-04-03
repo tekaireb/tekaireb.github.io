@@ -82,7 +82,12 @@
 
 .project_item_content.open {
     max-height: 100vh;
-    padding: 20px;
+    padding: 50px;
+    padding-top: 20px;
+}
+
+@media all and (max-width: 700px) {
+    .project_item_content.open { padding: 20px; }
 }
 
 .project_item_image {

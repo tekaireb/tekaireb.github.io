@@ -81,6 +81,9 @@
             "• Collaborated on a React + MongoDB live engagement tool in 36 hours, currently utilized by 3 campus organizations and professors.",
             "• Integrated with Heroku for automatic deployment."
         ],
+        "images": [
+            "https://raw.githubusercontent.com/gmundewadi/sbhacks2021_pulse/main/screenshots/pulse-screenshot-1.png"
+        ],
         "show": false,
         "tags": [
             "React",
@@ -105,7 +108,7 @@
             "• Performed a security and performance audit."
         ],
         "images": [
-            ""
+            "https://raw.githubusercontent.com/tekaireb/tekaireb.github.io/master/src/img/processor_image.jpg"
         ],
         "show": true,
         "tags": [

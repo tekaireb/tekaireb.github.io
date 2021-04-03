@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { NavLink } from 'react-router-dom';
 import '../styles/Menu.css';
 
 import logo from '../img/logo.svg';
@@ -67,7 +66,7 @@ export default function Menu(props) {
             (scroll_dir === 'down' ? 'menu_hidden' : '')}
         >
             <a className='logo_container' href='/'>
-                <img src={logo} class='menu_logo' alt='Tyler Ekaireb Monogram Logo' />
+                <img src={logo} className='menu_logo' alt='Tyler Ekaireb Monogram Logo' />
                 <span className='menu_logo_text'>Tyler Ekaireb</span>
             </a>
             <div className={'options_container ' + (window.innerWidth <= 700 && props.menu_open ? 'sidebar_open' : '')}>

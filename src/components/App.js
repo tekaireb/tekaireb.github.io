@@ -6,6 +6,7 @@ import ProjectsData from "../content/projects.json";
 
 import Menu from './Menu';
 import Intro from './sections/Intro';
+import About from './sections/About';
 import Jobs from './sections/Jobs';
 import Projects from './sections/Projects';
 import Contact from './sections/Contact';
@@ -20,6 +21,7 @@ function App() {
       <Menu menu_open={menu_open} set_menu_open={set_menu_open} />
       <div className={'content ' + (menu_open ? 'blur' : '')}>
         <Intro />
+        <About />
         <Jobs jobs={JobsData} />
         <Projects projects={ProjectsData} />
         <Contact />
